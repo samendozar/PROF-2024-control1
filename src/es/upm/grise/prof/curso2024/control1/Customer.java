@@ -8,8 +8,20 @@ public class Customer {
 	private List<Account> accounts;
 	
 	Customer() {
+		
 		accounts = new ArrayList<Account>();
+		
 	}
+	
+	
+	
+	public void addTransaction(Account account) {
+		
+		accounts.add(account);
+		
+	}
+	
+	
 	
 	public String getAccountWithHighestBalance() throws NoAccountsException {
 		

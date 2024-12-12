@@ -7,7 +7,7 @@ public class Customer {
 	
 	private List<Account> accounts;
 	
-	Customer() {
+	public Customer() {
 		
 		accounts = new ArrayList<Account>();
 		

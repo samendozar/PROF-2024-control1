@@ -7,7 +7,7 @@ public class Customer {
 	
 	private List<Account> accounts;
 	
-	Customer() {
+	public Customer() {
 		accounts = new ArrayList<Account>();
 	}
 	
@@ -33,6 +33,10 @@ public class Customer {
 		
 		return selectedAccount;
 		
+	}
+	
+	public void setAccounts(List<Account> list) {
+		this.accounts = list;
 	}
 	
 }

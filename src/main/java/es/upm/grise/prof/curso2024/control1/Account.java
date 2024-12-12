@@ -9,7 +9,7 @@ public class Account {
 	private float initialAmount;
 	private List<Transaction> transactions;
 	
-	Account() {
+	public Account() {
 		transactions = new ArrayList<Transaction>();
 	}
 	
@@ -26,6 +26,12 @@ public class Account {
 	
 	public String getAccountNumber() {
 		return accountNumber;
+	}
+	
+	public Account(String accountNo, float initialAmount) {
+		this.accountNumber = accountNo;
+		this.initialAmount = initialAmount;
+		this.transactions = new ArrayList<Transaction>();
 	}
 
 }
